@@ -12,3 +12,10 @@ sudo nano /etc/apt/sources.list.d/ros-latest.list
 
 hmt.japan.2016@gmail.com
 Truonghang123
+
+# source list
+deb http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/ buster main contrib non-free rpi
+
+# package ros
+deb http://packages.ros.org/ros/ubuntu buster main
+
