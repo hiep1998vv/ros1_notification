@@ -19,3 +19,10 @@ deb http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/ buster m
 # package ros
 deb http://packages.ros.org/ros/ubuntu buster main
 
+# sudo update show
+Hit:1 http://archive.raspberrypi.org/debian buster InRelease                   
+Hit:2 http://packages.ros.org/ros/ubuntu buster InRelease                      
+Hit:3 http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian buster InRelease
+Reading package lists... Done
+
+
