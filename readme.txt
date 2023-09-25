@@ -6,6 +6,10 @@ rosdep install --from-paths src --ignore-src -y --os=debian:buster
 export ROS_OS_OVERRIDE="debian" && rosdep update
 
 rosdep install -y --from-paths src --ignore-src --rosdistro melodic -r --os=debian:buster
+
+# set default python to python3 on raspberry when install ros
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+
 sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2 -DPYTHON_EXECUTABLE=/usr/bin/python3
 
 sudo nano /etc/apt/sources.list.d/ros-latest.list
